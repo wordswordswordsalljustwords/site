@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroPlay Online - Web-based Game Emulator</title>
+    
+    <!-- EmulatorJS styles -->
+    <style>
+      #game {
+        width: 100%;
+        height: 100%;
+      }
+      .ejs_context_menu {
+        z-index: 100;
+      }
+      /* Fullscreen styles */
+      #game:-webkit-full-screen {
+        width: 100%;
+        height: 100%;
+      }
+      #game:-moz-full-screen {
+        width: 100%;
+        height: 100%;
+      }
+      #game:-ms-fullscreen {
+        width: 100%;
+        height: 100%;
+      }
+      #game:fullscreen {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
